@@ -6,13 +6,13 @@
 
 let secretNumber = Math.trunc(Math.random() * 20 + 1);
 let score = 20;
-const highscore = 0;
+let highscore = 0;
 // decralation
 
 const displayMessage = function (message) {
   document.querySelector('.question-mark').textContent = message;
 };
-const checking = document.querySelector('.checking-link');
+let checking = document.querySelector('.checking-link');
 
 checking.addEventListener('click', () => {
   const userInput = Number(document.querySelector('.input').value);
